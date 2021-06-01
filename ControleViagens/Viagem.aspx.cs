@@ -36,7 +36,8 @@ namespace ControleViagens
                 lblmsg.Text = "Registro Inserido!";
                 Clear();
             }
-            else {
+            else
+            {
                 int id = Convert.ToInt32(valor);
                 TB_VIAGEM viagem = contextViagem.TB_VIAGEM.First(c => c.id == id);
                 viagem.descricao = v.descricao;
